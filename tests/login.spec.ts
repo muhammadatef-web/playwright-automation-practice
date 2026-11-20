@@ -1,5 +1,5 @@
 import { test, expect } from '../fixtures/baseFixtures';
-
+// Use the storage state generated in auth.setup.ts to run tests without UI login
 test.describe('Authentication Flow', { tag: '@smoke' }, () => {
   test('valid user can log in via UI', async ({ loginPage, testUser }) => {
     await loginPage.goto();
